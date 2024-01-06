@@ -1,0 +1,203 @@
+html {
+  font-size: 62.5%;
+}
+
+#header .links button {
+  font-size: 1.2rem;
+  font-family: inherit;
+}
+#header .links button ion-icon {
+  font-size: 2rem;
+}
+#header .header__sticky-navbar li {
+  font-size: 1.6rem;
+}
+#header .header__search button ion-icon {
+  font-size: 2rem;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  overflow: hidden;
+}
+
+img,
+ion-icon,
+em,
+a {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+.section {
+  padding-block: 60px;
+}
+
+#header .header__search {
+  display: none;
+  position: relative;
+}
+#header .header__search input {
+  height: 4rem;
+  padding-inline: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(138, 138, 138, 0.408);
+}
+#header .header__search input:focus {
+  outline: 1px solid hsl(0, 0%, 44%);
+}
+#header .header__search button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  translate: -50% -50%;
+}
+#header .header__upper-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9vh;
+  box-shadow: 0 0 3px 1px rgb(243, 243, 243);
+}
+#header .header__upper-navbar .logo {
+  width: 12rem;
+}
+#header .header__upper-navbar .open-menu {
+  padding: 0.5rem;
+}
+#header .header__upper-navbar .open-menu > * {
+  width: 2rem;
+  height: 0.2rem;
+  background-color: hsl(0, 0%, 0%);
+}
+#header .header__upper-navbar .open-menu .middle {
+  margin-block: 0.3rem;
+  width: 1rem;
+  margin-left: auto;
+  transition: width 0.2s;
+}
+#header .header__upper-navbar .open-menu:hover .middle {
+  width: 2rem;
+}
+#header .links {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+#header .links button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 5rem;
+}
+#header .links .cart-btn,
+#header .links .wishlist-btn {
+  position: relative;
+}
+#header .links button span {
+  position: absolute;
+  z-index: 2;
+  top: -0.5rem;
+  right: 0;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  line-height: 2rem;
+  background-color: hsl(0, 0%, 9%);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+#header .links .cart-btn span {
+  background-color: hsl(148, 45%, 58%);
+}
+#header .header__sticky-navbar {
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  bottom: 0;
+  width: 28rem;
+  translate: 120% 0;
+  padding: 2rem;
+  transition: translate 0.4s ease-in-out;
+}
+#header .header__sticky-navbar.show {
+  translate: 0 0;
+}
+#header .header__sticky-navbar .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+#header .header__sticky-navbar .top ion-icon {
+  font-size: 2.5rem;
+}
+#header .header__sticky-navbar li {
+  padding-block: 1rem;
+}
+#header .header__sticky-navbar li:not(:last-child) {
+  border-bottom: 1px solid rgba(237, 235, 235, 0.552);
+}
+#header .header__sticky-navbar.show + .overlay {
+  visibility: visible;
+  opacity: 0.7;
+}
+#header .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 9%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.2s;
+}
+
+@media (min-width: 62em) {
+  #header .header__search {
+    display: block;
+  }
+  #header .links {
+    position: static;
+  }
+  #header .links li:nth-child(2) {
+    display: none;
+  }
+  #header .header__upper-navbar .open-menu {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

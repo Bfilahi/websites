@@ -1,0 +1,35 @@
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: $ff-jost;
+    overflow: hidden;
+}
+
+img,
+ion-icon,
+em,
+a{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+li{
+    list-style-type: none;
+}
