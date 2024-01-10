@@ -3,7 +3,7 @@ let toggleMenu = () => {
     let opnBtn = document.querySelector('.open-menu');
     let closeBtn = document.querySelector('.close-menu');
     
-    let aside = document.querySelector('.header__sticky-navbar');
+    let aside = document.querySelector('.header__sidebar');
     
     opnBtn.addEventListener('click', () => {
         aside.classList.add('show');
@@ -14,7 +14,7 @@ let toggleMenu = () => {
     })
 
     document.addEventListener('mouseup', e => {
-        if(!e.target.closest('.header__sticky-navbar'))
+        if(!e.target.closest('.header__sidebar'))
             aside.classList.remove('show');
     })
 }

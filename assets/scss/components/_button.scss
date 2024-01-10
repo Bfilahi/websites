@@ -1,0 +1,31 @@
+.btn-primary{
+    background-color: $eerie-black;
+    color: #ffffff;
+    height: 6rem;
+    border-radius: .5rem;
+    border: 1px solid $eerie-black;
+    padding-inline: 5rem;
+
+    transition: background-color .4s, color .4s;
+
+    &:hover{
+        background-color: $white;
+        color: $eerie-black;
+    }
+}
+
+.service-btn{
+    height: 5rem;
+    color: $eerie-black;
+    background-color: $white;
+    border-radius: .5rem;
+    text-wrap: nowrap;
+    padding-inline: 3rem;
+
+    transition: background-color .4s, color .4s;
+
+    &:hover{
+        color: $white;
+        background-color: $eerie-black;
+    }
+}

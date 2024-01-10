@@ -9,7 +9,7 @@
 body{
     box-sizing: border-box;
     font-family: $ff-jost;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 img,
@@ -32,4 +32,9 @@ button{
 
 li{
     list-style-type: none;
+}
+
+.w-100{
+    width: 100%;
+    height: 100%;
 }

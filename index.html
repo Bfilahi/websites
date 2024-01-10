@@ -16,80 +16,218 @@
     <title>Casmart</title>
 </head>
 <body>
-    <header id="header" class="container">
-        <nav class="header__upper-navbar">
-            <div class="header__search">
-                <input type="text" placeholder="Search Product...">
-                <button>
-                    <ion-icon name="search-outline"></ion-icon>
-                </button>
-            </div>
-
-            <img src="./assets/img/logo.svg" alt="Logo" class="logo">
-
-            <ul class="links">
-                <li>
-                    <button>
-                        <ion-icon name="person-outline"></ion-icon>
-                        Sign in
-                    </button>
-                </li>
-                <li>
+    <header id="header">
+        <div class="container">
+            <nav class="header__upper-navbar">
+                <div class="header__search">
+                    <input type="text" placeholder="Search Product...">
                     <button>
                         <ion-icon name="search-outline"></ion-icon>
-                        Search
                     </button>
-                </li> 
-                <li>
-                    <button class="cart-btn">
-                        <span>3</span>
-                        <ion-icon name="cart-outline"></ion-icon>
-                        Cart
-                    </button>
-                </li>
-                <li>
-                    <button class="wishlist-btn">
-                        <span>2</span>
-                        <ion-icon name="heart-outline"></ion-icon>
-                        Wishlist
-                    </button>
-                </li>
-            </ul>
-
-            <button class="open-menu">
-                <div class="top"></div>
-                <div class="middle"></div>
-                <div class="bottom"></div>
-            </button>
-        </nav>
-
-        <nav class="header__sticky-navbar" aria-expanded="false">
-            <div class="top">
+                </div>
+    
                 <img src="./assets/img/logo.svg" alt="Logo" class="logo">
-                <button class="close-menu">
-                    <ion-icon name="close-outline"></ion-icon>
+    
+                <ul class="links">
+                    <li>
+                        <button>
+                            <ion-icon name="person-outline"></ion-icon>
+                            Sign in
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <ion-icon name="search-outline"></ion-icon>
+                            Search
+                        </button>
+                    </li> 
+                    <li>
+                        <button class="cart-btn">
+                            <span>3</span>
+                            <ion-icon name="cart-outline"></ion-icon>
+                            Cart
+                        </button>
+                    </li>
+                    <li>
+                        <button class="wishlist-btn">
+                            <span>2</span>
+                            <ion-icon name="heart-outline"></ion-icon>
+                            Wishlist
+                        </button>
+                    </li>
+                </ul>
+    
+                <button class="open-menu">
+                    <div class="top"></div>
+                    <div class="middle"></div>
+                    <div class="bottom"></div>
+                </button>
+            </nav>
+    
+            <aside class="header__sidebar" aria-expanded="false">
+                <div class="top">
+                    <img src="./assets/img/logo.svg" alt="Logo" class="logo">
+                    <button class="close-menu">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#shop">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#blog">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </aside>
+            <div class="overlay"></div>
+    
+            <!-- FOR WIDER SCREENS -->
+            <nav class="header__nav__wider-screens" aria-expanded="false">
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#shop">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#blog">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero section" style="background-image: url(./assets/img/hero-banner.jpg);">
+            <div class="hero__content container">
+                <h3>Fashion Everyday</h3>
+                <h1>
+                    Unrivalled <br/> Fashion House
+                </h1>
+                <button class="btn btn-primary">
+                    Shop Now
                 </button>
             </div>
-            <ul>
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#shop">Shop</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#blog">Blog</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="overlay"></div>
-    </header>
+        </section>
+
+        <section class="service">
+            <div class="services container section">
+                <div class="service__wrapper">
+                    <img src="./assets/img/service-icon-1.svg" width="50px" alt="service icon">
+                    <div class="content">
+                        <h3>Free Shipping</h3>
+                        <p>On All Order Over &dollar;599</p>
+                    </div>
+                </div>
+                <div class="service__wrapper">
+                    <img src="./assets/img/service-icon-2.svg" width="50px" alt="service icon">
+                    <div class="content">
+                        <h3>Easy Returns</h3>
+                        <p>30 Day Returns Policy</p>
+                    </div>
+                </div>
+                <div class="service__wrapper">
+                    <img src="./assets/img/service-icon-3.svg" width="50px" alt="service icon">
+                    <div class="content">
+                        <h3>Secure Payment</h3>
+                        <p>100% Secure Gaurantee</p>
+                    </div>
+                </div>
+                <div class="service__wrapper">
+                    <img src="./assets/img/service-icon-4.svg" width="50px" alt="service icon">
+                    <div class="content">
+                        <h3>Special Support</h3>
+                        <p>24/7 Dedicated Support</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category container">
+                <div class="category__card">
+                    <img src="./assets/img/category-1.jpg" class="w-100" alt="category image">
+                    <button class="btn service-btn">
+                        Sunglass & Eye
+                    </button>
+                </div>
+                <div class="category__card">
+                    <img src="./assets/img/category-2.jpg" class="w-100" alt="category image">
+                    <button class="btn service-btn">
+                        Active & Outdoor
+                    </button>
+                </div>
+                <div class="category__card">
+                    <img src="./assets/img/category-3.jpg" class="w-100" alt="category image">
+                    <button class="btn service-btn">
+                        Winter Wear
+                    </button>
+                </div>
+                <div class="category__card">
+                    <img src="./assets/img/category-4.jpg" class="w-100" alt="category image">
+                    <button class="btn service-btn">
+                        Exclusive Footwear
+                    </button>
+                </div>
+                <div class="category__card">
+                    <img src="./assets/img/category-5.jpg" class="w-100" alt="category image">
+                    <button class="btn service-btn">
+                        Jewelry
+                    </button>
+                </div>
+                <div class="category__card">
+                    <img src="./assets/img/category-6.jpg" class="w-100" alt="category image">
+                    <button class="btn service-btn">
+                        Sports Cap
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container">
+                <h1 class="products__title">
+                    Products of the week
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Accusantium autem debitis minus, 
+                    nobis quas similique optio excepturi 
+                    alias facilis eum officiis exercitationem. 
+                    Harum temporibus, veniam placeat alias error eum eius?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Accusantium autem debitis minus, 
+                    nobis quas similique optio excepturi 
+                    alias facilis eum officiis exercitationem. 
+                    Harum temporibus, veniam placeat alias error eum eius?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Accusantium autem debitis minus, 
+                    nobis quas similique optio excepturi 
+                    alias facilis eum officiis exercitationem. 
+                    Harum temporibus, veniam placeat alias error eum eius?
+                </p>
+            </div>
+        </section>
+    </main>
 
 
 

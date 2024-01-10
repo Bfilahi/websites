@@ -13,7 +13,8 @@ html{
         }
     }
 
-    .header__sticky-navbar{
+    .header__sidebar,
+    .header__nav__wider-screens{
         li{
             font-size: 1.6rem;
         }
@@ -25,3 +26,63 @@ html{
         }
     }
 }
+
+.hero{
+    h3{
+        font-size: $fs-1;
+        font-weight: $fw-500;
+    }
+    h1{
+        font-size: $fs-0;
+        line-height: 1;
+        font-weight: $fw-600;
+    }
+    .btn{
+        font-family: inherit;
+        font-size: $fs-3;
+        font-weight: $fw-500;
+    }
+}
+
+.service{
+    .services{
+        h3{
+            font-size: 1.8rem;
+        }
+        p{
+            font-size: 1.6rem;
+            opacity: .7;
+        }
+    }
+    .category .service-btn{
+        font-family: inherit;
+        font-size: 1.6rem;
+        font-weight: $fw-500;
+    }
+}
+
+
+
+
+
+// @media (min-width: 30em) {  // 480px
+//     $fs-0: 4.8rem;
+// }
+
+// @media (min-width: 36.25em) {  // 580px
+//     $fs-0: 6rem;
+// }
+
+// @media (min-width: 48.125em) {  // 770px
+
+// }
+
+// @media (min-width: 62em) {  // 992px
+//     $fs-0: 8rem;
+// }
+
+// @media (min-width: 75em) {  // 1200px
+//     $fs-0: 10rem;
+// }
+
+
