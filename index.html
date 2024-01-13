@@ -92,7 +92,7 @@
             <div class="overlay"></div>
     
             <!-- FOR WIDER SCREENS -->
-            <nav class="header__nav__wider-screens" aria-expanded="false">
+            <nav class="header__nav__wider-screens">
                 <ul>
                     <li>
                         <a href="#home">Home</a>
@@ -130,28 +130,36 @@
         <section class="service">
             <div class="services container section">
                 <div class="service__wrapper">
-                    <img src="./assets/img/service-icon-1.svg" width="50px" alt="service icon">
+                    <span>
+                        <img src="./assets/img/service-icon-1.svg" alt="service icon" loading="lazy">
+                    </span>
                     <div class="content">
                         <h3>Free Shipping</h3>
                         <p>On All Order Over &dollar;599</p>
                     </div>
                 </div>
                 <div class="service__wrapper">
-                    <img src="./assets/img/service-icon-2.svg" width="50px" alt="service icon">
+                    <span>
+                        <img src="./assets/img/service-icon-2.svg" alt="service icon" loading="lazy">
+                    </span>
                     <div class="content">
                         <h3>Easy Returns</h3>
                         <p>30 Day Returns Policy</p>
                     </div>
                 </div>
                 <div class="service__wrapper">
-                    <img src="./assets/img/service-icon-3.svg" width="50px" alt="service icon">
+                    <span>
+                        <img src="./assets/img/service-icon-3.svg" alt="service icon" loading="lazy">
+                    </span>
                     <div class="content">
                         <h3>Secure Payment</h3>
                         <p>100% Secure Gaurantee</p>
                     </div>
                 </div>
                 <div class="service__wrapper">
-                    <img src="./assets/img/service-icon-4.svg" width="50px" alt="service icon">
+                    <span>
+                        <img src="./assets/img/service-icon-4.svg" alt="service icon" loading="lazy">
+                    </span>
                     <div class="content">
                         <h3>Special Support</h3>
                         <p>24/7 Dedicated Support</p>
@@ -161,37 +169,37 @@
 
             <div class="category container">
                 <div class="category__card">
-                    <img src="./assets/img/category-1.jpg" class="w-100" alt="category image">
+                    <img src="./assets/img/category-1.jpg" class="w-100" alt="category image" loading="lazy">
                     <button class="btn service-btn">
                         Sunglass & Eye
                     </button>
                 </div>
                 <div class="category__card">
-                    <img src="./assets/img/category-2.jpg" class="w-100" alt="category image">
+                    <img src="./assets/img/category-2.jpg" class="w-100" alt="category image" loading="lazy">
                     <button class="btn service-btn">
                         Active & Outdoor
                     </button>
                 </div>
                 <div class="category__card">
-                    <img src="./assets/img/category-3.jpg" class="w-100" alt="category image">
+                    <img src="./assets/img/category-3.jpg" class="w-100" alt="category image" loading="lazy">
                     <button class="btn service-btn">
                         Winter Wear
                     </button>
                 </div>
                 <div class="category__card">
-                    <img src="./assets/img/category-4.jpg" class="w-100" alt="category image">
+                    <img src="./assets/img/category-4.jpg" class="w-100" alt="category image" loading="lazy">
                     <button class="btn service-btn">
                         Exclusive Footwear
                     </button>
                 </div>
                 <div class="category__card">
-                    <img src="./assets/img/category-5.jpg" class="w-100" alt="category image">
+                    <img src="./assets/img/category-5.jpg" class="w-100" alt="category image" loading="lazy">
                     <button class="btn service-btn">
                         Jewelry
                     </button>
                 </div>
                 <div class="category__card">
-                    <img src="./assets/img/category-6.jpg" class="w-100" alt="category image">
+                    <img src="./assets/img/category-6.jpg" class="w-100" alt="category image" loading="lazy">
                     <button class="btn service-btn">
                         Sports Cap
                     </button>
@@ -199,34 +207,344 @@
             </div>
         </section>
 
-        <section class="products">
+        <section class="products section">
             <div class="container">
-                <h1 class="products__title">
-                    Products of the week
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Accusantium autem debitis minus, 
-                    nobis quas similique optio excepturi 
-                    alias facilis eum officiis exercitationem. 
-                    Harum temporibus, veniam placeat alias error eum eius?
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Accusantium autem debitis minus, 
-                    nobis quas similique optio excepturi 
-                    alias facilis eum officiis exercitationem. 
-                    Harum temporibus, veniam placeat alias error eum eius?
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Accusantium autem debitis minus, 
-                    nobis quas similique optio excepturi 
-                    alias facilis eum officiis exercitationem. 
-                    Harum temporibus, veniam placeat alias error eum eius?
-                </p>
+                <div class="products__header">
+                    <h2 class="products__title">
+                        Products of the week
+                    </h2>
+                    <div class="products__tabs">
+                        <input type="radio" name="products_tabs" id="best-seller">
+                        <input type="radio" name="products_tabs" id="hot-collection">
+                        <input type="radio" name="products_tabs" id="trendy">
+                        <input type="radio" name="products_tabs" id="new-arrival">
+                        <div>
+                            <label class="active" for="best-seller">Best Seller</label>
+                            <label for="hot-collection">Hot Collection</label>
+                            <label for="trendy">Trendy</label>
+                            <label for="new-arrival">New Arrival</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products__cards">
+                    <div class="products__cards__card">
+                        <span class="state sale">-25%</span>
+                        <img src="./assets/img/product-1.jpg" class="w-100" alt="" loading="lazy">
+                        <div class="btns">
+                            <button><ion-icon name="eye-outline"></ion-icon></button>
+                            <button>
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                Add to Cart
+                            </button>
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                        </div>
+                        <div class="info">
+                            <a href="#">Varsi Leather Bag</a>
+                            <var class="price">&pound;48.75</var>
+                            <var class="item-sale">&pound;65.00</var>
+                        </div>
+                    </div>
+
+                    <div class="products__cards__card">
+                        <span class="state new">New</span>
+                        <img src="./assets/img/product-2.jpg" class="w-100" alt="" loading="lazy">
+                        <div class="btns">
+                            <button><ion-icon name="eye-outline"></ion-icon></button>
+                            <button>
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                Add to Cart
+                            </button>
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                        </div>
+                        <div class="info">
+                            <a href="#">Fit Twill Shirt for Women</a>
+                            <var class="price">&pound;62.00</var>
+                        </div>
+                    </div>
+
+                    <div class="products__cards__card">
+                        <img src="./assets/img/product-3.jpg" class="w-100" alt="" loading="lazy">
+                        <div class="btns">
+                            <button><ion-icon name="eye-outline"></ion-icon></button>
+                            <button>
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                Add to Cart
+                            </button>
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                        </div>
+                        <div class="info">
+                            <a href="#">Grand Atlantic Chukka Boots</a>
+                            <var class="price">&pound;32.00</var>
+                        </div>
+                    </div>
+
+                    <div class="products__cards__card">
+                        <img src="./assets/img/product-4.jpg" class="w-100" alt="" loading="lazy">
+                        <div class="btns">
+                            <button><ion-icon name="eye-outline"></ion-icon></button>
+                            <button>
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                Add to Cart
+                            </button>
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                        </div>
+                        <div class="info">
+                            <a href="#">Women's Faux-Trim Shirt</a>
+                            <var class="price">&pound;84.00</var>
+                        </div>
+                    </div>
+
+                    <div class="products__cards__card">
+                        <img src="./assets/img/product-5.jpg" class="w-100" alt="" loading="lazy">
+                        <div class="btns">
+                            <button><ion-icon name="eye-outline"></ion-icon></button>
+                            <button>
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                Add to Cart
+                            </button>
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                        </div>
+                        <div class="info">
+                            <a href="#">Soft Touch Interlock Polo</a>
+                            <var class="price">&pound;45.00</var>
+                        </div>
+                    </div>
+
+                    <div class="products__cards__card">
+                        <img src="./assets/img/product-6.jpg" class="w-100" alt="" loading="lazy">
+                        <div class="btns">
+                            <button><ion-icon name="eye-outline"></ion-icon></button>
+                            <button>
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                Add to Cart
+                            </button>
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                        </div>
+                        <div class="info">
+                            <a href="#">Casmart Smart Watch</a>
+                            <var class="price">&pound;30.00</var>
+                            <var class="item-sale">&pound;38.00</var>
+                        </div>
+                    </div>
+
+                    <div class="products__cards__card">
+                        <img src="./assets/img/product-7.jpg" class="w-100" alt="" loading="lazy">
+                        <div class="btns">
+                            <button><ion-icon name="eye-outline"></ion-icon></button>
+                            <button>
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                Add to Cart
+                            </button>
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                        </div>
+                        <div class="info">
+                            <a href="#">Casmart Smart Glass</a>
+                            <var class="price">&pound;25.00</var>
+                            <var class="item-sale">&pound;39.00</var>
+                        </div>
+                    </div>
+
+                    <div class="products__cards__card">
+                        <img src="./assets/img/product-8.jpg" class="w-100" alt="" loading="lazy">
+                        <div class="btns">
+                            <button><ion-icon name="eye-outline"></ion-icon></button>
+                            <button>
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                Add to Cart
+                            </button>
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                        </div>
+                        <div class="info">
+                            <a href="#">Cotton Shirt for Men</a>
+                            <var class="price">&pound;85.00</var>
+                            <var class="item-sale">&pound;99.00</var>
+                        </div>
+                    </div>
+
+                    <div class="products__cards__card">
+                        <img src="./assets/img/product-9.jpg" class="w-100" alt="" loading="lazy">
+                        <div class="btns">
+                            <button><ion-icon name="eye-outline"></ion-icon></button>
+                            <button>
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                Add to Cart
+                            </button>
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                        </div>
+                        <div class="info">
+                            <a href="#">Double-breasted Blazer</a>
+                            <var class="price">&pound;32.00</var>
+                        </div>
+                    </div>
+
+                    <div class="products__cards__card">
+                        <span class="state new">New</span>
+                        <img src="./assets/img/product-10.jpg" class="w-100" alt="" loading="lazy">
+                        <div class="btns">
+                            <button><ion-icon name="eye-outline"></ion-icon></button>
+                            <button>
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                Add to Cart
+                            </button>
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                        </div>
+                        <div class="info">
+                            <a href="#">Ribbed Cotton Bodysuits</a>
+                            <var class="price">&pound;71.00</var>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-reveal-products">
+                    View All Products
+                </button>
             </div>
         </section>
+
+        <section class="fashion-news section">
+            <div class="container">
+                <h2>Latest fashion news</h2>
+    
+                <div class="fashion-news__cards">
+                    <article class="card">
+                        <div class="img-wrapper">
+                            <img src="./assets/img/blog-1.jpg" class="w-100" alt="" loading="lazy">
+                        </div>
+                        <div class="content">
+                            <span>
+                                <ion-icon name="folder-open-outline"></ion-icon>
+                                <a href="#">FASHION</a>
+                            </span>
+                            <span>
+                                <ion-icon name="time-outline"></ion-icon>
+                                <a href="#">31 MAR 2021</a>
+                            </span>
+                        </div>
+                        <a href="#">Worthy Cyber Monday Fashion From Casmart</a>
+                    </article>
+
+                    <article class="card">
+                        <div class="img-wrapper">
+                            <img src="./assets/img/blog-2.jpg" class="w-100" alt="" loading="lazy">
+                        </div>
+                        <div class="content">
+                            <span>
+                                <ion-icon name="folder-open-outline"></ion-icon>
+                                <a href="#">FASHION</a>
+                            </span>
+                            <span>
+                                <ion-icon name="time-outline"></ion-icon>
+                                <a href="#">31 MAR 2021</a>
+                            </span>
+                        </div>
+                        <a href="#">Holiday Home Decoration I’ve Recently Ordered</a>
+                    </article>
+
+                    <article class="card">
+                        <div class="img-wrapper">
+                            <img src="./assets/img/blog-3.jpg" class="w-100" alt="" loading="lazy">
+                        </div>
+                        <div class="content">
+                            <span>
+                                <ion-icon name="folder-open-outline"></ion-icon>
+                                <a href="#">FASHION</a>
+                            </span>
+                            <span>
+                                <ion-icon name="time-outline"></ion-icon>
+                                <a href="#">31 MAR 2021</a>
+                            </span>
+                        </div>
+                        <a href="#">Unique Ideas for Fashion You Haven’t heard yet</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscription section">
+            <div class="container">
+                <div class="newsletter__wrapper" style="background-image: url(./assets/img/newsletter-bg.png);">
+                    <h2>Subscribe Newsletter</h2>
+                    <p>
+                        Enter your email below to be the first to know about new collections and product launches.
+                    </p>
+                    <form class="form">
+                        <input type="text" placeholder="Enter your email">
+                        <ion-icon class="mail-icon" name="mail-outline"></ion-icon>
+                        <button class="btn btn-primary">
+                            <span>Subscribe</span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__top section">
+                <div class="footer__top__brand">
+                    <a href="#"><img src="./assets/img/logo.svg" alt="logo"></a>
+                    <p>
+                        Casmart is a fashion theme for presents a complete wardrobe of uniquely crafted Ethnic Wear, Casuals, Edgy Denims, & Accessories inspired from the most contemporary
+                    </p>
+                    <ul class="socials">
+                        <li><a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="https://www.x.com"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="https://www.instagram.com"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="https://www.pintrest.com"><ion-icon name="logo-pinterest"></ion-icon></a></li>
+                    </ul>
+                </div>
+                <div class="footer__top__links__wrapper">
+                    <div class="footer__top__links">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a href="#">About Company</a></li>
+                            <li><a href="#">Payment Type</a></li>
+                            <li><a href="#">Awards Winning</a></li>
+                            <li><a href="#">World Media Partner</a></li>
+                            <li><a href="#">Become an Agent</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__top__links">
+                        <h3>Category</h3>
+                        <ul>
+                            <li><a href="#">Handbags &amp; Wallets</a></li>
+                            <li><a href="#">Women's Clothing</a></li>
+                            <li><a href="#">Plus Sizes</a></li>
+                            <li><a href="#">Complete Your Look</a></li>
+                            <li><a href="#">Baby Corner</a></li>
+                            <li><a href="#">Man &amp; Woman Shoe</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__top__links">
+                        <h3>Help & Support</h3>
+                        <ul>
+                            <li><a href="#">Dealers &amp; Agents</a></li>
+                            <li><a href="#">FAQ Information</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                            <li><a href="#">Shipping &amp; Delivery</a></li>
+                            <li><a href="#">Order Tranking</a></li>
+                            <li><a href="#">List of Shops</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom container">
+                <p class="copyright">
+                    &copy; <span class="year"></span> <b>Filahi</b>. All Rights Reserved
+                </p>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Sitemap</a>
+                </div>
+                <div class="support">
+                    <p>We Support</p>
+                    <img src="./assets/img/payment-img.png">
+                </div>
+            </div>
+        </footer>
     </main>
 
 

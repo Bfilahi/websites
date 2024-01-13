@@ -7,11 +7,20 @@
     padding-inline: 1.5rem;
 }
 
-
-
-@media (min-width: 30em) {  // 480px
-
+.w-100{
+    width: 100%;
+    height: 100%;
 }
+
+.sale{
+    background-color: $candy-pink;
+}
+
+.new{
+    background-color: $ocean-green;
+}
+
+
 
 @media (min-width: 36.25em) {  // 580px
     .container{

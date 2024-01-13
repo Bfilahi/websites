@@ -48,6 +48,7 @@ html{
     .services{
         h3{
             font-size: 1.8rem;
+            font-weight: $fw-500;
         }
         p{
             font-size: 1.6rem;
@@ -61,28 +62,103 @@ html{
     }
 }
 
+.products{
+    &__title{
+        font-size: 2.8rem;
+        font-weight: $fw-500;
+    }
+    &__tabs label{
+        font-size: 1.6rem;
+        font-weight: $fw-600;
+    }
 
+    &__cards__card{
+        .state{
+            font-size: 1.4rem;
+        }
 
+        .btns{
+            button{
+                font-size: 1.6rem;
+                font-family: inherit;
+            }
+        }
 
+        a{
+            font-size: 1.8rem;
+            font-weight: $fw-500;
+        }
 
-// @media (min-width: 30em) {  // 480px
-//     $fs-0: 4.8rem;
-// }
+        .price,
+        .item-sale{
+            font-size: 1.5rem;
+            font-weight: $fw-500;
+        }
+    }
+}
 
-// @media (min-width: 36.25em) {  // 580px
-//     $fs-0: 6rem;
-// }
+.fashion-news{
+    h2{
+        font-size: 2.8rem;
+        font-weight: $fw-500;
+        text-align: center;
+    }
+    .content{
+        a,
+        ion-icon{
+            font-size: 1.4rem;
+            font-weight: $fw-500;
+            opacity: .6;
+        }
 
-// @media (min-width: 48.125em) {  // 770px
+        & + a{
+            font-size: 2rem;
+            font-weight: $fw-600;
+        }
+    }
+}
 
-// }
+.subscription{
+    h2{
+        font-size: 2.6rem;
+        font-weight: $fw-500;
+    }
+    p{
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+    .form{
+        input{
+            font-family: inherit;
 
-// @media (min-width: 62em) {  // 992px
-//     $fs-0: 8rem;
-// }
+            &::placeholder{
+                font-size: 1.6rem;
+            }
+        }
+        .mail-icon{
+            font-size: 1.6rem;
+        }
+    }
+}
 
-// @media (min-width: 75em) {  // 1200px
-//     $fs-0: 10rem;
-// }
+.footer{
+    &__top__brand{
+        p, .socials ion-icon{
+            font-size: 1.6rem;
+        }
+    }
 
+    &__top__links{
+        h3{
+            font-size: 2.2rem;
+            font-weight: $fw-500;
+        }
+        a{
+            font-size: 1.6rem;
+        }
+    }
 
+    &__bottom{
+        font-size: 1.6rem;
+    }
+}

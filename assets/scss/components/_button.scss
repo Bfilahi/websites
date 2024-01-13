@@ -1,4 +1,5 @@
 .btn-primary{
+    font-size: 1.6rem;
     background-color: $eerie-black;
     color: #ffffff;
     height: 6rem;
@@ -28,4 +29,8 @@
         color: $white;
         background-color: $eerie-black;
     }
+}
+
+.btn{
+    font-family: inherit;
 }
